@@ -19,7 +19,7 @@
         // Funciona si los HTML están en pages/ y lang/ está en la raíz,
         // o si HTML y lang/ están al mismo nivel.
         // Los HTML están en HTML/ y lang/ está en la raíz del proyecto
-        jsonPath: '../lang/'
+        jsonPath: './lang/'
     };
 
     let currentLang = CONFIG.defaultLang;
