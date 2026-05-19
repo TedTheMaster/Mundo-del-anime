@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los géneros del anime: Shōnen, Shōjo, Seinen, Joséi y géneros temáticos como Mecha, Isekai, Horror y más. Guía completa de clasificación del anime japonés.">
+    <title>Géneros del Anime - Mundo del Anime</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/dropdown.css">
+    <link rel="stylesheet" href="../CSS/lang-selector.css">
+    
+    <link rel="preload" as="image" href="../Images/generos-bg.jpg" fetchpriority="high" media="(min-width: 1024px)">
+    <link rel="preload" as="image" href="../Images/generos-bg-tablet.jpg" fetchpriority="high" media="(min-width: 768px) and (max-width: 1023px)">
+    <link rel="preload" as="image" href="../Images/generos-bg-mobile.jpg" fetchpriority="high" media="(max-width: 767px)">
+</head>
+<body class="pagina-generos">
+
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 1px; overflow: hidden; opacity: 0.01;">
+        <h1 style="margin:0; font-size:1px;">Géneros del Anime - Mundo del Anime</h1>
+    </div>
+    
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header role="banner">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menú de navegación" aria-expanded="false">☰</button>
+        <a href="index.html" class="logo" aria-label="Mundo del Anime - Inicio">Mundo del Anime</a>
+        
+        <nav role="navigation" aria-label="Navegación principal" id="mainNav">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" aria-current="page">Inicio</a></li>
+                
+                <!-- DROPDOWN: HISTORIA -->
+                <li>
+                    <button class="dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-historia">
+                        Historia
+                        <span class="dropdown-arrow" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-list" id="dropdown-historia" role="menu">
+                        <li role="none"><a href="historia.html#periodo1-titulo" class="dropdown-item" role="menuitem">Los Orígenes</a></li>
+                        <li role="none"><a href="historia.html#periodo2-titulo" class="dropdown-item" role="menuitem">Posguerra</a></li>
+                        <li role="none"><a href="historia.html#periodo3-titulo" class="dropdown-item" role="menuitem">Era Dorada</a></li>
+                        <li role="none"><a href="historia.html#periodo4-titulo" class="dropdown-item" role="menuitem">Expansión Global</a></li>
+                        <li role="none"><a href="historia.html#periodo5-titulo" class="dropdown-item" role="menuitem">Era Digital</a></li>
+                        <li role="none"><a href="historia.html#periodo6-titulo" class="dropdown-item" role="menuitem">Streaming</a></li>
+                    </ul>
+                </li>
+                
+                <!-- DROPDOWN: GÉNEROS -->
+                <li>
+                    <button class="dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-generos">
+                        Géneros
+                        <span class="dropdown-arrow" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-list" id="dropdown-generos" role="menu">
+                        <li role="none"><a href="generos.html#demograficos-titulo" class="dropdown-item" role="menuitem">Demográficos</a></li>
+                        <li role="none"><a href="generos.html#tematicos-titulo" class="dropdown-item" role="menuitem">Temáticos</a></li>
+                    </ul>
+                </li>
+                
+                <!-- DROPDOWN: ESTUDIOS -->
+                <li>
+                    <button class="dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-estudios">
+                        Estudios
+                        <span class="dropdown-arrow" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-list" id="dropdown-estudios" role="menu">
+                        <li role="none"><a href="estudios.html#ghibli-titulo" class="dropdown-item" role="menuitem">Studio Ghibli</a></li>
+                        <li role="none"><a href="estudios.html#kyoto-titulo" class="dropdown-item" role="menuitem">Kyoto Animation</a></li>
+                        <li role="none"><a href="estudios.html#toei-titulo" class="dropdown-item" role="menuitem">Toei Animation</a></li>
+                    </ul>
+                </li>
+                
+                <!-- DROPDOWN: CULTURA -->
+                <li>
+                    <button class="dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-cultura">
+                        Cultura
+                        <span class="dropdown-arrow" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-list" id="dropdown-cultura" role="menu">
+                        <li role="none"><a href="cultura.html#valores-titulo" class="dropdown-item" role="menuitem">Valores</a></li>
+                        <li role="none"><a href="cultura.html#tradiciones-titulo" class="dropdown-item" role="menuitem">Tradiciones</a></li>
+                        <li role="none"><a href="cultura.html#gastronomia-titulo" class="dropdown-item" role="menuitem">Gastronomía</a></li>
+                        <li role="none"><a href="cultura.html#festivales-titulo" class="dropdown-item" role="menuitem">Festivales</a></li>
+                    </ul>
+                </li>
+                
+                <!-- DROPDOWN: IMPACTO GLOBAL -->
+                <li>
+                    <button class="dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-impacto">
+                        Impacto Global
+                        <span class="dropdown-arrow" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-list" id="dropdown-impacto" role="menu">
+                        <li role="none"><a href="impacto.html#videojuegos-titulo" class="dropdown-item" role="menuitem">Videojuegos</a></li>
+                        <li role="none"><a href="impacto.html#eventos-titulo" class="dropdown-item" role="menuitem">Eventos</a></li>
+                        <li role="none"><a href="impacto.html#streaming-titulo" class="dropdown-item" role="menuitem">Streaming</a></li>
+                        <li role="none"><a href="impacto.html#influencia-titulo" class="dropdown-item" role="menuitem">Influencia</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="hero generos-hero" aria-label="Introducción a géneros de anime">
+            <picture>
+                <source media="(max-width: 767px)" srcset="../Images/generos-bg-mobile.jpg" width="768" height="400">
+                <source media="(max-width: 1023px)" srcset="../Images/generos-bg-tablet.jpg" width="1024" height="500">
+                <source media="(min-width: 1024px)" srcset="../Images/generos-bg.jpg" width="1920" height="600">
+                <img src="../Images/generos-bg.jpg" 
+                     alt="Collage de diversos libros de manga en una colección"
+                     fetchpriority="high"
+                     loading="eager"
+                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+            </picture>
+            <div class="hero-content-simple generos-hero-simple">
+                <div class="portal generos-portal">GÉNEROS Y ESTILOS</div>
+                <h1 class="titulo generos-titulo">Diversidad Narrativa</h1>
+                <p class="generos-descripcion">El anime abarca todos los géneros narrativos imaginables, cada uno reflejando aspectos únicos de la cultura y sociedad japonesa.</p>
+                <a href="#contenido-principal" class="hero-boton generos-boton">Explorar géneros ↓</a>
+            </div>
+        </section>
+
+        <section class="introduccion-generos" id="contenido-principal" aria-labelledby="intro-generos">
+            <h2 id="intro-generos" class="visually-hidden">Introducción</h2>
+            <div class="contenedor">
+                <p class="texto-intro">
+                    A diferencia de la animación occidental que históricamente se ha enfocado principalmente en contenido infantil, el anime japonés reconoce que la animación es un medio narrativo versátil capaz de contar cualquier tipo de historia para cualquier audiencia.
+                </p>
+                <p class="texto-intro">
+                    Los géneros del anime no solo se definen por su contenido, sino también por su audiencia demográfica objetivo, creando una clasificación única que combina elementos narrativos con características culturales japonesas.
+                </p>
+            </div>
+        </section>
+
+        <section class="demograficos" aria-labelledby="demograficos-titulo">
+            <h2 id="demograficos-titulo" class="seccion-titulo">Géneros Demográficos</h2>
+            <p class="seccion-subtitulo">Clasificación por audiencia objetivo</p>
+
+            <div class="grid-demograficos">
+                <article class="demografico-card" aria-labelledby="shonen-titulo">
+                    <div class="demografico-imagen">
+                        <img src="../Images/generos-shonen.jpg" alt="Collage de protagonistas de anime Shōnen mostrando a Goku, Naruto y Luffy" loading="lazy">
+                        <div class="imagen-overlay"></div>
+                    </div>
+                    <div class="demografico-contenido">
+                        <h3 id="shonen-titulo" class="genero-titulo">Shōnen</h3>
+                        <p class="genero-descripcion">Dirigido principalmente a adolescentes masculinos, el shōnen se centra en acción, aventura y la superación personal del protagonista.</p>
+                        
+                        <div class="caracteristicas">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Protagonistas jóvenes en proceso de crecimiento</li>
+                                <li>Énfasis en amistad, trabajo en equipo y determinación</li>
+                                <li>Batallas épicas y sistemas de poder</li>
+                                <li>Mensajes sobre nunca rendirse (Ganbatte)</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="ejemplos">
+                            <h4>Ejemplos Icónicos:</h4>
+                            <div class="ejemplos-lista">
+                                <span>Dragon Ball</span>
+                                <span>Naruto</span>
+                                <span>One Piece</span>
+                                <span>My Hero Academia</span>
+                                <span>Demon Slayer</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demografico-card" aria-labelledby="shojo-titulo">
+                    <div class="demografico-imagen">
+                        <img src="../Images/generos-shojo.jpg" alt="Ilustración de protagonistas de anime Shōjo incluyendo Sailor Moon" loading="lazy">
+                        <div class="imagen-overlay"></div>
+                    </div>
+                    <div class="demografico-contenido">
+                        <h3 id="shojo-titulo" class="genero-titulo">Shōjo</h3>
+                        <p class="genero-descripcion">Orientado a audiencias femeninas jóvenes, explora relaciones románticas, desarrollo emocional y auto-descubrimiento.</p>
+                        
+                        <div class="caracteristicas">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Enfoque en relaciones interpersonales complejas</li>
+                                <li>Desarrollo emocional profundo de personajes</li>
+                                <li>Estética visual delicada y expresiva</li>
+                                <li>Exploración de identidad y crecimiento personal</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="ejemplos">
+                            <h4>Ejemplos Icónicos:</h4>
+                            <div class="ejemplos-lista">
+                                <span>Sailor Moon</span>
+                                <span>Fruits Basket</span>
+                                <span>Ouran High School Host Club</span>
+                                <span>Cardcaptor Sakura</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demografico-card" aria-labelledby="seinen-titulo">
+                    <div class="demografico-imagen">
+                        <img src="../Images/generos-seinen.jpg" alt="Imagen oscura representando anime Seinen con escenas de Berserk" loading="lazy">
+                        <div class="imagen-overlay"></div>
+                    </div>
+                    <div class="demografico-contenido">
+                        <h3 id="seinen-titulo" class="genero-titulo">Seinen</h3>
+                        <p class="genero-descripcion">Para audiencias adultas masculinas, presenta narrativas maduras, complejas y psicológicamente profundas.</p>
+                        
+                        <div class="caracteristicas">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Temas adultos y moralmente ambiguos</li>
+                                <li>Violencia realista y consecuencias</li>
+                                <li>Desarrollo psicológico complejo</li>
+                                <li>Crítica social y filosófica</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="ejemplos">
+                            <h4>Ejemplos Icónicos:</h4>
+                            <div class="ejemplos-lista">
+                                <span>Berserk</span>
+                                <span>Monster</span>
+                                <span>Vinland Saga</span>
+                                <span>Tokyo Ghoul</span>
+                                <span>Attack on Titan</span>
+                                <span>Evangelion</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="demografico-card" aria-labelledby="josei-titulo">
+                    <div class="demografico-imagen">
+                        <img src="../Images/generos-josei.jpg" alt="Escena realista de anime Joséi mostrando personajes adultos en situaciones cotidianas" loading="lazy">
+                        <div class="imagen-overlay"></div>
+                    </div>
+                    <div class="demografico-contenido">
+                        <h3 id="josei-titulo" class="genero-titulo">Joséi</h3>
+                        <p class="genero-descripcion">Dirigido a mujeres adultas, retrata la vida, el amor y las relaciones desde una perspectiva realista y madura.</p>
+                        
+                        <div class="caracteristicas">
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Relaciones románticas realistas y complejas</li>
+                                <li>Vida profesional y personal adulta</li>
+                                <li>Representación auténtica de desafíos femeninos</li>
+                                <li>Narrativas emocionales profundas</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="ejemplos">
+                            <h4>Ejemplos Icónicos:</h4>
+                            <div class="ejemplos-lista">
+                                <span>Nana</span>
+                                <span>Paradise Kiss</span>
+                                <span>Nodame Cantabile</span>
+                                <span>Chihayafuru</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="tematicos" aria-labelledby="tematicos-titulo">
+            <h2 id="tematicos-titulo" class="seccion-titulo">Géneros Temáticos</h2>
+            <p class="seccion-subtitulo">Clasificaciones basadas en el contenido y estilo narrativo</p>
+
+            <div class="grid-tematicos">
+                <article class="tematico-card" aria-labelledby="mecha-titulo">
+                    <div class="tematico-imagen">
+                        <img src="../Images/generos-mecha.jpg" alt="Robot gigante Evangelion en plano armonioso junto a dos protagonistas" loading="lazy">
+                    </div>
+                    <div class="tematico-contenido">
+                        <h3 id="mecha-titulo">Mecha</h3>
+                        <p>Robots gigantes piloteados por humanos, a menudo con comentarios sobre guerra y humanidad.</p>
+                        <div class="tematico-ejemplos">
+                            <span>Gundam</span>
+                            <span>Evangelion</span>
+                            <span>Code Geass</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tematico-card" aria-labelledby="isekai-titulo">
+                    <div class="tematico-imagen">
+                        <img src="../Images/generos-isekai.jpg" alt="Personaje masculino acompañado de varios personajes femeninos en un mundo fantástico medieval" loading="lazy">
+                    </div>
+                    <div class="tematico-contenido">
+                        <h3 id="isekai-titulo">Isekai</h3>
+                        <p>Protagonistas transportados a mundos fantásticos alternativos.</p>
+                        <div class="tematico-ejemplos">
+                            <span>Sword Art Online</span>
+                            <span>Re:Zero</span>
+                            <span>Mushoku Tensei</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tematico-card" aria-labelledby="horror-titulo">
+                    <div class="tematico-imagen">
+                        <img src="../Images/generos-horror.jpg" alt="Escena de personaje con su mano, que es una criatura amorfa y deforme" loading="lazy">
+                    </div>
+                    <div class="tematico-contenido">
+                        <h3 id="horror-titulo">Horror</h3>
+                        <p>Terror psicológico, sobrenatural y gore con atmósferas inquietantes.</p>
+                        <div class="tematico-ejemplos">
+                            <span>Another</span>
+                            <span>Higurashi</span>
+                            <span>Parasyte</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tematico-card" aria-labelledby="musical-titulo">
+                    <div class="tematico-imagen">
+                        <img src="../Images/generos-musical.jpg" alt="Personajes de anime tocando el violin y el piano de manera sincronica" loading="lazy">
+                    </div>
+                    <div class="tematico-contenido">
+                        <h3 id="musical-titulo">Musical/Idol</h3>
+                        <p>Centrado en música, baile y el mundo del entretenimiento.</p>
+                        <div class="tematico-ejemplos">
+                            <span>Love Live!</span>
+                            <span>K-On!</span>
+                            <span>Your Lie in April</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tematico-card" aria-labelledby="slice-titulo">
+                    <div class="tematico-imagen">
+                        <img src="../Images/generos-sliceoflife.jpg" alt="Escena tranquila de vida cotidiana japonesa" loading="lazy">
+                    </div>
+                    <div class="tematico-contenido">
+                        <h3 id="slice-titulo">Slice of Life</h3>
+                        <p>Vida cotidiana realista, momentos simples pero significativos.</p>
+                        <div class="tematico-ejemplos">
+                            <span>March Comes in Like a Lion</span>
+                            <span>Barakamon</span>
+                            <span>Nichijou</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tematico-card" aria-labelledby="comedia-titulo">
+                    <div class="tematico-imagen">
+                        <img src="../Images/generos-comedia.jpg" alt="Personaje de anime en una pose tranquila con la vista confundida" loading="lazy">
+                    </div>
+                    <div class="tematico-contenido">
+                        <h3 id="comedia-titulo">Comedia</h3>
+                        <p>Humor absurdo, situacional y parodias del anime mismo.</p>
+                        <div class="tematico-ejemplos">
+                            <span>Gintama</span>
+                            <span>One Punch Man</span>
+                            <span>Saiki K.</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="posibilidades" aria-labelledby="posibilidades-titulo">
+            <div class="posibilidades-contenido">
+                <h2 id="posibilidades-titulo" class="seccion-titulo">Infinitas Posibilidades</h2>
+                <p class="texto-posibilidades">
+                    La verdadera belleza del anime radica en su capacidad para combinar géneros, romper convenciones y crear experiencias narrativas únicas. Cada serie puede mezclar elementos de múltiples géneros, creando obras que desafían categorización simple y ofrecen experiencias verdaderamente originales.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div>
+            <h3>Mundo del Anime</h3>
+            <p>Tu portal cultural dedicado al anime japonés. Explora, aprende y conecta con una comunidad global.</p>
+            <p class="copyright">© 2026 Mundo del Anime. Todos los derechos reservados.</p>
+        </div>
+        <nav aria-label="Recursos">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#" aria-label="Biblioteca de anime">Biblioteca</a></li>
+                <li><a href="#" aria-label="Catálogo completo">Catálogo</a></li>
+                <li><a href="#" aria-label="Academia de anime">Academia</a></li>
+                <li><a href="#" aria-label="Blog de noticias">Blog</a></li>
+            </ul>
+        </nav>
+        <nav aria-label="Comunidad">
+            <h3>Comunidad</h3>
+            <ul>
+                <li><a href="#" aria-label="Foros de discusión">Foros</a></li>
+                <li><a href="#" aria-label="Eventos de anime">Eventos</a></li>
+                <li><a href="#" aria-label="Galería de Cosplay">Cosplay</a></li>
+                <li><a href="#" aria-label="Fan Art de la comunidad">Fan Art</a></li>
+            </ul>
+        </nav>
+        <nav aria-label="Información legal">
+            <h3>Acerca de</h3>
+            <ul>
+                <li><a href="#" aria-label="Sobre nosotros">Sobre Nosotros</a></li>
+                <li><a href="#" aria-label="Contacto">Contacto</a></li>
+                <li><a href="#" aria-label="Política de privacidad">Privacidad</a></li>
+                <li><a href="#" aria-label="Términos de uso">Términos</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <a href="#" class="boton-subir" title="Volver arriba" aria-label="Volver al inicio de la página">↑</a>
+
+    <script>
+        (function() {
+            'use strict';
+            
+            const botonSubir = document.querySelector('.boton-subir');
+            if (botonSubir) {
+                botonSubir.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            
+            var hamburger = document.getElementById('hamburgerBtn');
+            var navMenu = document.getElementById('mainNav');
+            
+            function resetMenuState() {
+                if (window.innerWidth > 768) {
+                    if (navMenu) navMenu.classList.remove('active');
+                    if (hamburger) hamburger.style.display = 'none';
+                } else {
+                    if (hamburger) hamburger.style.display = 'block';
+                    if (navMenu) navMenu.classList.remove('active');
+                }
+            }
+            
+            if (hamburger && navMenu) {
+                resetMenuState();
+                window.addEventListener('resize', resetMenuState);
+                
+                hamburger.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+                
+                var enlaces = navMenu.querySelectorAll('a');
+                for (var i = 0; i < enlaces.length; i++) {
+                    enlaces[i].addEventListener('click', function() {
+                        if (window.innerWidth <= 768) {
+                            navMenu.classList.remove('active');
+                        }
+                    });
+                }
+            }
+        })();
+    </script>
+    
+    
+    <script src="../JS/header-scroll.js"></script> 
+    <script src="../JS/dropdown.js"></script>   
+    <script src="../JS/traducciones.js"></script>
+    <script src="../JS/animations.js"></script>
+</body>
+</html>
