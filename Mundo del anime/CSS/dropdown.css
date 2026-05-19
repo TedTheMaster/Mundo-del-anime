@@ -1,0 +1,277 @@
+/* ============================================
+   MENÚS DESPLEGABLES (DROPDOWN) - MUNDO DEL ANIME
+   Desktop: hover | Móvil: click/touch
+   ============================================ */
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.nav-menu {
+    display: flex;
+    gap: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu > li {
+    position: relative;
+}
+
+/* ===== ENLACES PRINCIPALES DEL NAV ===== */
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 12px 18px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: inherit;
+    white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #ff6ec7;
+    background: rgba(255, 110, 199, 0.1);
+    outline: none;
+}
+
+.nav-link[aria-current="page"] {
+    color: #ff6ec7;
+    font-weight: bold;
+}
+
+.nav-link[aria-current="page"]::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 18px;
+    right: 18px;
+    height: 2px;
+    background: #ff6ec7;
+}
+
+/* ===== BOTÓN DROPDOWN ===== */
+.dropdown-btn {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 12px 18px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: inherit;
+    white-space: nowrap;
+}
+
+.dropdown-btn:hover,
+.dropdown-btn:focus {
+    color: #ff6ec7;
+    background: rgba(255, 110, 199, 0.1);
+    outline: none;
+}
+
+.dropdown-btn[aria-current="page"] {
+    color: #ff6ec7;
+    font-weight: bold;
+}
+
+/* ===== FLECHA INDICADORA ===== */
+.dropdown-arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid currentColor;
+    transition: transform 0.3s ease;
+    margin-left: 4px;
+    opacity: 0.7;
+}
+
+/* Rotar flecha cuando está abierto */
+.dropdown-btn[aria-expanded="true"] .dropdown-arrow {
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+/* ===== SUBMENÚ (DROPDOWN) - OCULTO POR DEFECTO ===== */
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: rgba(15, 15, 30, 0.98);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 110, 199, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    list-style: none;
+    padding: 8px 0;
+    margin: 8px 0 0 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1001;
+}
+
+/* MOSTRAR dropdown al pasar el mouse (desktop) */
+.nav-menu > li:hover > .dropdown-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* MOSTRAR dropdown con clase .show (JS para click/touch) */
+.dropdown-list.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Alineación derecha para los últimos dropdowns */
+.nav-menu > li:nth-last-child(2) > .dropdown-list,
+.nav-menu > li:last-child > .dropdown-list {
+    left: auto;
+    right: 0;
+}
+
+/* ===== ENLACES DEL SUBMENÚ ===== */
+.dropdown-list > li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    color: #d0d0d0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+    white-space: nowrap;
+    background: none;
+    border-top: none;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #ff6ec7;
+    background: rgba(255, 110, 199, 0.15);
+    border-left-color: #ff6ec7;
+    padding-left: 24px;
+    outline: none;
+}
+
+.dropdown-item:focus-visible {
+    outline: 2px solid #ffd700;
+    outline-offset: -2px;
+}
+
+/* Separador sutil entre items */
+.dropdown-list > li + li {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ===== RESPONSIVE - MÓVIL ===== */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+    
+    .nav-menu > li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    
+    .nav-link,
+    .dropdown-btn {
+        padding: 15px 25px;
+        width: 100%;
+        border-radius: 0;
+        justify-content: space-between;
+        font-size: 1.1rem;
+    }
+    
+    .nav-link[aria-current="page"]::after {
+        display: none;
+    }
+    
+    /* Dropdown en móvil: acordeón deslizante */
+    .dropdown-list {
+        position: static;
+        width: 100%;
+        min-width: auto;
+        background: rgba(0, 0, 0, 0.4);
+        border: none;
+        border-left: 3px solid #ff6ec7;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+    
+    .dropdown-list.show {
+        max-height: 500px;
+        padding: 8px 0;
+    }
+    
+    /* No mostrar en hover en móvil */
+    .nav-menu > li:hover > .dropdown-list {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+    
+    .dropdown-item {
+        padding: 12px 25px 12px 40px;
+        font-size: 1rem;
+        border-left: none;
+    }
+    
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        padding-left: 45px;
+        border-left: none;
+    }
+    
+    .dropdown-arrow {
+        border-top-width: 6px;
+        border-left-width: 6px;
+        border-right-width: 6px;
+    }
+}
+
+/* ===== REDUCIR MOVIMIENTO ===== */
+@media (prefers-reduced-motion: reduce) {
+    .dropdown-list,
+    .dropdown-arrow {
+        transition: none;
+    }
+}

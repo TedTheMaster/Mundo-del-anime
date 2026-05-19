@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Impacto global del anime en videojuegos, eventos, streaming, música, moda y cultura popular mundial. Descubre cómo el anime japonés transformó el entretenimiento global.">
+    <title>Impacto Global - Mundo del Anime</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/dropdown.css">
+    <link rel="stylesheet" href="../CSS/lang-selector.css">
+    
+    <link rel="preload" as="image" href="../Images/impacto-bg.jpg" fetchpriority="high" media="(min-width: 1024px)">
+    <link rel="preload" as="image" href="../Images/impacto-bg-tablet.jpg" fetchpriority="high" media="(min-width: 768px) and (max-width: 1023px)">
+    <link rel="preload" as="image" href="../Images/impacto-bg-mobile.jpg" fetchpriority="high" media="(max-width: 767px)">
+</head>
+<body class="pagina-impacto">
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <header role="banner">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menú de navegación" aria-expanded="false">☰</button>
+        <a href="index.html" class="logo" aria-label="Mundo del Anime - Inicio">Mundo del Anime</a>
+        
+        <nav role="navigation" aria-label="Navegación principal" id="mainNav">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" aria-current="page">Inicio</a></li>
+                
+                <!-- DROPDOWN: HISTORIA -->
+                <li>
+                    <button class="dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-historia">
+                        Historia
+                        <span class="dropdown-arrow" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-list" id="dropdown-historia" role="menu">
+                        <li role="none"><a href="historia.html#periodo1-titulo" class="dropdown-item" role="menuitem">Los Orígenes</a></li>
+                        <li role="none"><a href="historia.html#periodo2-titulo" class="dropdown-item" role="menuitem">Posguerra</a></li>
+                        <li role="none"><a href="historia.html#periodo3-titulo" class="dropdown-item" role="menuitem">Era Dorada</a></li>
+                        <li role="none"><a href="historia.html#periodo4-titulo" class="dropdown-item" role="menuitem">Expansión Global</a></li>
+                        <li role="none"><a href="historia.html#periodo5-titulo" class="dropdown-item" role="menuitem">Era Digital</a></li>
+                        <li role="none"><a href="historia.html#periodo6-titulo" class="dropdown-item" role="menuitem">Streaming</a></li>
+                    </ul>
+                </li>
+                
+                <!-- DROPDOWN: GÉNEROS -->
+                <li>
+                    <button class="dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-generos">
+                        Géneros
+                        <span class="dropdown-arrow" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-list" id="dropdown-generos" role="menu">
+                        <li role="none"><a href="generos.html#demograficos-titulo" class="dropdown-item" role="menuitem">Demográficos</a></li>
+                        <li role="none"><a href="generos.html#tematicos-titulo" class="dropdown-item" role="menuitem">Temáticos</a></li>
+                    </ul>
+                </li>
+                
+                <!-- DROPDOWN: ESTUDIOS -->
+                <li>
+                    <button class="dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-estudios">
+                        Estudios
+                        <span class="dropdown-arrow" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-list" id="dropdown-estudios" role="menu">
+                        <li role="none"><a href="estudios.html#ghibli-titulo" class="dropdown-item" role="menuitem">Studio Ghibli</a></li>
+                        <li role="none"><a href="estudios.html#kyoto-titulo" class="dropdown-item" role="menuitem">Kyoto Animation</a></li>
+                        <li role="none"><a href="estudios.html#toei-titulo" class="dropdown-item" role="menuitem">Toei Animation</a></li>
+                    </ul>
+                </li>
+                
+                <!-- DROPDOWN: CULTURA -->
+                <li>
+                    <button class="dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-cultura">
+                        Cultura
+                        <span class="dropdown-arrow" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-list" id="dropdown-cultura" role="menu">
+                        <li role="none"><a href="cultura.html#valores-titulo" class="dropdown-item" role="menuitem">Valores</a></li>
+                        <li role="none"><a href="cultura.html#tradiciones-titulo" class="dropdown-item" role="menuitem">Tradiciones</a></li>
+                        <li role="none"><a href="cultura.html#gastronomia-titulo" class="dropdown-item" role="menuitem">Gastronomía</a></li>
+                        <li role="none"><a href="cultura.html#festivales-titulo" class="dropdown-item" role="menuitem">Festivales</a></li>
+                    </ul>
+                </li>
+                
+                <!-- DROPDOWN: IMPACTO GLOBAL -->
+                <li>
+                    <button class="dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="dropdown-impacto">
+                        Impacto Global
+                        <span class="dropdown-arrow" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-list" id="dropdown-impacto" role="menu">
+                        <li role="none"><a href="impacto.html#videojuegos-titulo" class="dropdown-item" role="menuitem">Videojuegos</a></li>
+                        <li role="none"><a href="impacto.html#eventos-titulo" class="dropdown-item" role="menuitem">Eventos</a></li>
+                        <li role="none"><a href="impacto.html#streaming-titulo" class="dropdown-item" role="menuitem">Streaming</a></li>
+                        <li role="none"><a href="impacto.html#influencia-titulo" class="dropdown-item" role="menuitem">Influencia</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- HERO - Introducción general al Impacto Global -->
+        <section class="hero impacto-hero" aria-label="Introducción al impacto global del anime">
+            <picture>
+                <source media="(max-width: 767px)" srcset="../Images/impacto-bg-mobile.jpg" width="768" height="400">
+                <source media="(max-width: 1023px)" srcset="../Images/impacto-bg-tablet.jpg" width="1024" height="500">
+                <source media="(min-width: 1024px)" srcset="../Images/impacto-bg.jpg" width="1920" height="600">
+                <img src="../Images/impacto-bg.jpg" 
+                     alt="Dos personajes de anime que caminan y se miran mutuamente"
+                     fetchpriority="high"
+                     loading="eager"
+                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+            </picture>
+            <div class="hero-content-simple impacto-hero-simple">
+                <div class="portal impacto-portal">IMPACTO MUNDIAL</div>
+                <h1 class="titulo impacto-titulo-hero">Una Revolución Cultural</h1>
+                <p class="impacto-descripcion-hero">Descubre cómo el anime japonés ha transformado la cultura global, la economía y conectado millones de personas alrededor del mundo a través de múltiples industrias creativas</p>
+                <a href="#contenido-principal" class="hero-boton impacto-boton">Explorar impacto ↓</a>
+            </div>
+        </section>
+
+        <!-- INTRODUCCIÓN GENERAL -->
+        <section class="introduccion-impacto" id="contenido-principal" aria-labelledby="intro-impacto">
+            <h2 id="intro-impacto" class="visually-hidden">Introducción</h2>
+            <div class="contenedor">
+                <p class="texto-intro">
+                    El anime ha crecido hasta convertirse en un fenómeno cultural global que va mucho más allá de la animación japonesa. Su impacto se refleja en múltiples industrias creativas, influyendo en la forma en que se producen historias, se consumen contenidos y se construyen comunidades de fans alrededor del mundo.
+                </p>
+                <p class="texto-intro">
+                    Desde los videojuegos hasta las plataformas de streaming, pasando por eventos masivos y la moda internacional, el anime ha dejado una huella imborrable en la cultura popular contemporánea.
+                </p>
+            </div>
+        </section>
+
+        <!-- VIDEOJUEGOS - Primera sección específica -->
+        <section class="impacto-seccion videojuegos-seccion" aria-labelledby="videojuegos-titulo">
+            <article class="impacto-contenido">
+                <h2 id="videojuegos-titulo" class="impacto-titulo-seccion">Videojuegos</h2>
+                <p class="impacto-descripcion-seccion">
+                    La influencia del anime en los videojuegos ha sido enorme, inspirando estilos visuales, narrativas épicas y personajes icónicos. Muchas franquicias han dado el salto al gaming con títulos basados en series populares como Dragon Ball, Naruto o Demon Slayer, mientras que otros juegos adoptan directamente su estética para crear experiencias interactivas con un estilo claramente japonés.
+                </p>
+            </article>
+            <div class="impacto-imagen-container">
+                <figure class="impacto-imagen">
+                    <img src="../Images/impacto-videojuegos.jpg" alt="Imagen promocional de una saga de videojuegos muy conocida en la industria, Silent Hill F" loading="lazy">
+                    <figcaption class="visually-hidden">Videojuegos inspirados en anime</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- EVENTOS -->
+        <section class="impacto-seccion eventos-seccion reverse" aria-labelledby="eventos-titulo">
+            <div class="impacto-imagen-container">
+                <figure class="impacto-imagen">
+                    <img src="../Images/impacto-eventos.jpg" alt="Dos personas haciendo una pose mientras hacen cosplay de personajes de anime, mientras sonríen y comen" loading="lazy">
+                    <figcaption class="visually-hidden">Eventos de anime y cosplay</figcaption>
+                </figure>
+            </div>
+            <article class="impacto-contenido">
+                <h2 id="eventos-titulo" class="impacto-titulo-seccion">Eventos de Anime</h2>
+                <p class="impacto-descripcion-seccion">
+                    El auge del anime también ha impulsado la creación de grandes eventos internacionales como convenciones, festivales y exposiciones donde los fans se reúnen para celebrar estrenos, cosplay, concursos y actividades culturales. Estos espacios se han convertido en puntos clave de encuentro que fortalecen la comunidad y expanden la cultura otaku a nivel mundial.
+                </p>
+            </article>
+        </section>
+
+        <!-- STREAMING -->
+        <section class="impacto-seccion streaming-seccion" aria-labelledby="streaming-titulo">
+            <article class="impacto-contenido">
+                <h2 id="streaming-titulo" class="impacto-titulo-seccion">Streaming</h2>
+                <p class="impacto-descripcion-seccion">
+                    Las plataformas de streaming han sido fundamentales para la expansión global del anime, permitiendo que millones de personas accedan fácilmente a series desde cualquier país. Servicios como Crunchyroll, Netflix o Disney+ han invertido en licencias y producciones originales, haciendo que el anime forme parte del entretenimiento mainstream.
+                </p>
+            </article>
+            <div class="impacto-imagen-container">
+                <figure class="impacto-imagen">
+                    <img src="../Images/impacto-streaming.jpg" alt="Interfaz de plataforma de streaming popular a nivel global, Crunchyroll" loading="lazy">
+                    <figcaption class="visually-hidden">Plataformas de streaming de anime</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- INFLUENCIA GLOBAL -->
+        <section class="impacto-seccion influencia-seccion reverse" aria-labelledby="influencia-titulo">
+            <div class="impacto-imagen-container">
+                <figure class="impacto-imagen">
+                    <img src="../Images/impacto-influencia.jpg" alt="Personajes de anime haciendo una pose de calma y control" loading="lazy">
+                    <figcaption class="visually-hidden">Influencia global del anime en cultura pop</figcaption>
+                </figure>
+            </div>
+            <article class="impacto-contenido">
+                <h2 id="influencia-titulo" class="impacto-titulo-seccion">Influencia Global</h2>
+                <p class="impacto-descripcion-seccion">
+                    Hoy en día, el anime impacta la música, la moda, el cine y el arte digital, convirtiéndose en una referencia cultural reconocida en todo el mundo. Sus openings se vuelven éxitos internacionales, sus estilos se replican en producciones occidentales, y su capacidad de conectar emocionalmente con el público lo ha consolidado como una de las expresiones culturales más influyentes del siglo XXI.
+                </p>
+            </article>
+        </section>
+
+        <!-- REFLEXIÓN -->
+        <section class="reflexion-section" aria-labelledby="reflexion-titulo">
+            <div class="reflexion-overlay"></div>
+            <article class="reflexion-contenido">
+                <h2 id="reflexion-titulo" class="reflexion-titulo">Reflexión</h2>
+                <div class="reflexion-card">
+                    <p>
+                        El anime se ha convertido en una de las formas de expresión más poderosas de la actualidad, capaz de transmitir emociones, valores y mundos únicos como ningún otro medio. Poco a poco, su expansión global ha permitido que más personas descubran nuevas historias, culturas y perspectivas, demostrando que la animación no tiene límites y que siempre habrá más relatos por contar y compartir.
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div>
+            <h3>Mundo del Anime</h3>
+            <p>Tu portal cultural dedicado al anime japonés. Explora, aprende y conecta con una comunidad global.</p>
+            <p class="copyright">© 2026 Mundo del Anime. Todos los derechos reservados.</p>
+        </div>
+        <nav aria-label="Recursos">
+            <h3>Recursos</h3>
+            <ul>
+                <li><a href="#" aria-label="Biblioteca de anime">Biblioteca</a></li>
+                <li><a href="#" aria-label="Catálogo completo">Catálogo</a></li>
+                <li><a href="#" aria-label="Academia de anime">Academia</a></li>
+                <li><a href="#" aria-label="Blog de noticias">Blog</a></li>
+            </ul>
+        </nav>
+        <nav aria-label="Comunidad">
+            <h3>Comunidad</h3>
+            <ul>
+                <li><a href="#" aria-label="Foros de discusión">Foros</a></li>
+                <li><a href="#" aria-label="Eventos de anime">Eventos</a></li>
+                <li><a href="#" aria-label="Galería de Cosplay">Cosplay</a></li>
+                <li><a href="#" aria-label="Fan Art de la comunidad">Fan Art</a></li>
+            </ul>
+        </nav>
+        <nav aria-label="Información legal">
+            <h3>Acerca de</h3>
+            <ul>
+                <li><a href="#" aria-label="Sobre nosotros">Sobre Nosotros</a></li>
+                <li><a href="#" aria-label="Contacto">Contacto</a></li>
+                <li><a href="#" aria-label="Política de privacidad">Privacidad</a></li>
+                <li><a href="#" aria-label="Términos de uso">Términos</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <a href="#" class="boton-subir" title="Volver arriba" aria-label="Volver al inicio de la página">↑</a>
+
+    <script>
+        (function() {
+            'use strict';
+            
+            // Botón subir
+            const botonSubir = document.querySelector('.boton-subir');
+            if (botonSubir) {
+                botonSubir.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            
+            // ===== MENÚ HAMBURGUESA =====
+            var hamburger = document.getElementById('hamburgerBtn');
+            var navMenu = document.getElementById('mainNav');
+            
+            function resetMenuState() {
+                if (window.innerWidth > 768) {
+                    if (navMenu) navMenu.classList.remove('active');
+                    if (hamburger) hamburger.style.display = 'none';
+                } else {
+                    if (hamburger) hamburger.style.display = 'block';
+                    if (navMenu) navMenu.classList.remove('active');
+                }
+            }
+            
+            if (hamburger && navMenu) {
+                resetMenuState();
+                window.addEventListener('resize', resetMenuState);
+                
+                hamburger.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+                
+                var enlaces = navMenu.querySelectorAll('a');
+                for (var i = 0; i < enlaces.length; i++) {
+                    enlaces[i].addEventListener('click', function() {
+                        if (window.innerWidth <= 768) {
+                            navMenu.classList.remove('active');
+                        }
+                    });
+                }
+            }
+        })();
+    </script>
+
+    <script src="../JS/header-scroll.js"></script>
+    <script src="../JS/dropdown.js"></script>    
+    <script src="../JS/traducciones.js"></script>
+    <script src="../JS/animations.js"></script>
+</body>
+</html>

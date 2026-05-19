@@ -1,0 +1,67 @@
+/* ============================================
+   SELECTOR DE IDIOMA - MUNDO DEL ANIME v2.0
+   ============================================ */
+
+.lang-selector-i18n {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 12px;
+    flex-shrink: 0;
+}
+
+.lang-btn-i18n {
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.65);
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 4px 9px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    line-height: 1;
+}
+
+.lang-btn-i18n:hover {
+    color: #ff6ec7;
+    border-color: rgba(255, 110, 199, 0.5);
+    background: rgba(255, 110, 199, 0.08);
+}
+
+.lang-btn-i18n.active,
+.lang-btn-i18n[aria-pressed="true"] {
+    color: #ff6ec7;
+    border-color: #ff6ec7;
+    background: rgba(255, 110, 199, 0.15);
+}
+
+.lang-btn-i18n:focus-visible {
+    outline: 2px solid #ffd700;
+    outline-offset: 2px;
+}
+
+.lang-sep {
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 0.75rem;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .lang-selector-i18n {
+        position: absolute;
+        top: 14px;
+        right: 60px;   /* a la izquierda del hamburger */
+        margin-left: 0;
+        z-index: 200;
+    }
+
+    .lang-btn-i18n {
+        font-size: 0.75rem;
+        padding: 3px 7px;
+    }
+}
